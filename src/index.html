@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>To-do List</title>
+    <title>Weather-App</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,66 +12,20 @@
   </head>
   <body>
 
-    <div class="background">
-
-      <!-- <div class="moon"></div> -->
-      <div class="star" id="star1"></div>
-      <div class="star" id="star2"></div>
-      <div class="star" id="star3"></div>
-      <div class="star" id="star4"></div>
-      <div class="star" id="star5"></div>
-      <div class="star" id="star6"></div>
-      <div class="star" id="star7"></div>
-      <div class="star" id="star8"></div>
-      <div class="star" id="star9"></div>
-      <div class="star" id="star0"></div>
-
-    </div>
     <div class="container">
-      <!-- start of First form -->
-
-      <!-- A button to open the popup form -->
-      <button class="open-button">Create group</button>
-
-      <!-- The form -->
-      <div class="group-form-popup" id="myGroupForm">
-        <form class="group-form-container" onsubmit="false">
-          <h3>Group Name:</h3>
-
-          <input class="name-input" type="text" placeholder="Enter Name" minlength="2" required>
-
-          <button type="submit" class="btn group-create-btn">Create</button>
-          <button class="btn group-cancel-btn">Cancel</button>
-        </form>
+      <div class="outer-cell">
+        <div class="inner-cell">
+          <input class="search-bar" type="text" placeholder="Enter a city">
+          <button class="search-btn">search</button>
+          <img class="weather-icon" src="" alt="">
+          <p class="temp"></p>
+          <p class="wind-speed"></p>
+          <p class="humidity"></p>
+        </div>
       </div>
-
-      <!-- end of First form -->
-
-      <!-- start of Second form -->
-
-      <!-- The form -->
-      <div class="list-form-popup" id="myListForm">
-        <form class="list-form-container" onsubmit="false">
-          <h3>List info:</h3>
-
-          <input class="list-name-input" type="text" placeholder="Enter task" minlength="2" required>
-          <select class="priority-select" required>
-            <option value="low">low</option>
-            <option value="moderate">moderate</option>
-            <option value="high">high</option>
-          </select>
-
-          <button type="submit" class="btn list-create-btn">Create</button>
-          <button class="btn list-cancel-btn">Cancel</button>
-        </form>
-      </div>
-
-      <!-- END OF SECOND FORM -->
-
-      <div class="group-container"></div>
     </div>
 
-    <footer>By Nyle Blake</a></footer>
+    <footer>Made by Nyle Blake, Powered by <a href="https://www.weatherapi.com/" title="Free Weather API">WeatherAPI.com</a></a></footer>
     
   </body>
 </html>
